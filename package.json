@@ -2,7 +2,9 @@
   "name": "haseeb_playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test tests/WebAPI.spec.js --headed" 
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
