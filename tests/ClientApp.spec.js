@@ -1,77 +1,32 @@
 const { test, expect } = require('@playwright/test');
+const { LoginPage } = require('../pageObjects/LoginPage');
+const { DashboardPage } = require('../pageObjects/DashboardPage');
+const { CartPage } = require('../pageObjects/cartPage');
+const { PaymentPage } = require('../pageObjects/PaymentPage');
 
-test('@Web Client App login', async ({ page }) => {
-  const email = 'xxxxxxxx@gmail.com';
+test.only('@Web Client App login', async ({ page }) => {
+  const username = 'mdhaseebpes@gmail.com';
+  const password = 'Cloudone12@';
   const productName = 'IPHONE 13 PRO';
-  const products = page.locator('.card-body');
 
   // Navigate to login
-  await page.goto('https://rahulshettyacademy.com/client');
-  await page.locator('#userEmail').fill(email);
-  await page.locator('#userPassword').fill('xxxxxxx12@');
-  await page.locator("[value='Login']").click();
+  const loginPage = new LoginPage(page);
+  await loginPage.goToUrl();
+  await loginPage.validLogin(username, password);
 
   // Wait for page to load products
-  await page.waitForLoadState('networkidle');
-  await products.first().waitFor({ state: 'visible', timeout: 10000 });
-
-  // Add specific product to cart
-  const count = await products.count();
-  for (let i = 0; i < count; i++) {
-    const productTitle = await products.nth(i).locator('b').textContent();
-    if (productTitle?.trim() === productName) {
-      await products.nth(i).locator('text=Add To Cart').click();
-      break;
-    }
-  }
+  const dashboardPage = new DashboardPage(page);
+  await dashboardPage.searchAddProduct(productName);
 
   // Go to cart and verify product
-  await page.locator("[routerlink*='cart']").click();
-  await page
-    .locator('div li')
-    .first()
-    .waitFor({ state: 'visible', timeout: 5000 });
+  const cartPage = new CartPage(page);
+  await cartPage.goToCart();
+  await cartPage.productExist(productName);
+  await cartPage.clickCheckOut();
 
-  const productExist = await page
-    .locator(`h3:has-text("${productName}")`)
-    .isVisible();
-  expect(productExist).toBeTruthy();
-
-  // Proceed to checkout
-  await page.locator('text=Checkout').click();
-
-  // Fill in payment details
-  await page.locator('(//input[@type="text"])[2]').fill('123');
-  await page.locator('(//input[@type="text"])[3]').fill('Has');
-
-  await page
-    .locator('[placeholder="Select Country"]')
-    .pressSequentially('ind', { delay: 100 });
-
-  const dropdownOptions = page.locator(
-    '//section[@class="ta-results list-group ng-star-inserted"]//button'
-  );
-
-  // ✅ Ensure dropdown is loaded and visible
-  await expect(dropdownOptions.first()).toBeVisible({ timeout: 10000 });
-
-  const optionsCount = await dropdownOptions.count();
-
-  for (let i = 0; i < optionsCount; ++i) {
-    const option = dropdownOptions.nth(i);
-    await expect(option).toBeVisible(); // Make sure it's visible before accessing text
-    const text = await option.textContent();
-
-    if (text?.trim() === 'India') {
-      await option.click();
-      break;
-    }
-  }
-
-  // Verify user email appears in summary
-  await expect(page.locator('.user__name [type="text"]').first()).toHaveText(
-    email
-  );
+  const payment = new PaymentPage(page);
+  await payment.cardPersonalInformation();
+  await payment.shippingInformation('India', username);
 
   // Submit order
   await Promise.all([

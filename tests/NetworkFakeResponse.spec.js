@@ -3,8 +3,8 @@ const { ApiUtils } = require('./utils/apiUtils');
 const { json } = require('stream/consumers');
 
 const loginPayLoad = {
-  userEmail: 'xxxxx@gmail.com',
-  userPassword: 'xxxxxx12@',
+  userEmail: 'mdhaseebpes@gmail.com',
+  userPassword: 'Cloudone12@',
 };
 
 const orderPayload = {
