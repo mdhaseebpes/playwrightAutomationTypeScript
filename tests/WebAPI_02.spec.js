@@ -1,7 +1,7 @@
 // File: tests/apiTest.spec.js
 
 const { test, expect, request } = require('@playwright/test');
-const { ApiUtils } = require('./utils/apiUtils');
+const { ApiUtils } = require('../utils/apiUtils');
 
 let orderId;
 let webContext;
@@ -11,7 +11,7 @@ const orderPayload = {
 };
 
 test.beforeAll(async ({ browser }) => {
-  const email = 'xxxxxxx@gmail.com';
+  const email = 'mdxxxxxxx@gmail.com';
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto('https://rahulshettyacademy.com/client');
@@ -25,7 +25,7 @@ test.beforeAll(async ({ browser }) => {
 
 test.beforeEach(async () => {});
 
-test('login via api and order ', async () => {
+test('@API login via api and order ', async () => {
   const email = 'xxxxxxxx@gmail.com';
   const productName = 'IPHONE 13 PRO';
 
@@ -138,7 +138,7 @@ test('login via api and order ', async () => {
   expect(orderID.includes(orderIdDetails)).toBeTruthy();
 });
 
-test('login via API and add product to cart ', async () => {
+test('@API login via API and add product to cart ', async () => {
   const productName = 'IPHONE 13 PRO';
 
   const page = await webContext.newPage();

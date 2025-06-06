@@ -1,5 +1,9 @@
 const { test, expect } = require('@playwright/test');
 
+//use to run the test parallel  within the test spec file
+test.describe.configure({ mode: 'parallel' });
+//if  particular test fails while executing and  does not execute rest of the scenarios and skips it
+//test.describe.configure({ mode: 'serial' });
 test('Popup validations', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 

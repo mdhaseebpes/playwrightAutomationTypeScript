@@ -19,7 +19,7 @@ module.exports = defineConfig({
   /* Retry on CI only */
   retries: 1,
   /* Opt out of parallel tests on CI. */
-  workers: 3,
+  workers: 3, // runs the 2 test spec files in parallel but within the test file it will execute in sequence
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -27,21 +27,43 @@ module.exports = defineConfig({
   expect: {
     timeout: 10000,
   },
-  use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
-    browserName: 'chromium',
-    headless: false,
-    //screenshot: 'on',
-    screenshot: 'only-on-failure',
-    //trace: 'retain-on-failure', //off , on
-    trace: 'on',
-    //viewport: { width: 720, height: 720 }, //Browser opens in specific width and height
-    // ...devices['Galaxy S9+'], //Run mobile responsive mode
-    ignoreHTTPSErrors: true, //ssl cerification
-    permissions: ['geolocation'], //allows location when ask for location
-    video: 'retain-on-failure',
-  },
+
+  projects: [
+    {
+      name: 'chrome',
+      use: {
+        browserName: 'chromium',
+        headless: false,
+        //screenshot: 'on',
+        screenshot: 'only-on-failure',
+        //trace: 'retain-on-failure', //off , on
+        trace: 'on',
+        //viewport: { width: 720, height: 720 }, //Browser opens in specific width and height
+        // ...devices['Galaxy S9+'], //Run mobile responsive mode
+        ignoreHTTPSErrors: true, //ssl cerification
+        permissions: ['geolocation'], //allows location when ask for location
+        video: 'retain-on-failure',
+      },
+    },
+
+    {
+      name: 'safari',
+      use: {
+        browserName: 'webkit',
+        headless: false,
+        //screenshot: 'on',
+        screenshot: 'only-on-failure',
+        //trace: 'retain-on-failure', //off , on
+        trace: 'on',
+        ...devices['iPhone 15'],
+        video: 'retain-on-failure',
+        //viewport: { width: 720, height: 720 }, //Browser opens in specific width and height
+        // ...devices['Galaxy S9+'], //Run mobile responsive mode
+        ignoreHTTPSErrors: true, //ssl cerification
+        permissions: ['geolocation'], //allows location when ask for location
+      },
+    },
+  ],
 
   /* Configure projects for major browsers */
   // projects: [

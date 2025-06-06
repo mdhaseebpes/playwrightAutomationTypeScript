@@ -1,5 +1,5 @@
 const { test, expect, request } = require('@playwright/test');
-const { ApiUtils } = require('./utils/apiUtils');
+const { ApiUtils } = require('../utils/apiUtils');
 const { json } = require('stream/consumers');
 
 const loginPayLoad = {

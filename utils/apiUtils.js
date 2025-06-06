@@ -11,8 +11,8 @@ class ApiUtils {
       'https://rahulshettyacademy.com/api/ecom/auth/login',
       {
         data: {
-          userEmail: 'mdhaseebpes@gmail.com',
-          userPassword: 'Cloudone12@',
+          userEmail: 'mdxxxxxxx@gmail.com',
+          userPassword: 'xxxxxx12@',
         },
       }
     );

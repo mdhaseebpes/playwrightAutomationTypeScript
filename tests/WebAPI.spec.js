@@ -1,10 +1,10 @@
 // File: tests/apiTest.spec.js
 
 const { test, expect, request } = require('@playwright/test');
-const { ApiUtils } = require('./utils/apiUtils');
+const { ApiUtils } = require('../utils/apiUtils');
 
 const loginPayLoad = {
-  userEmail: 'xxxxx@gmail.com',
+  userEmail: 'mdxxxxxxx@gmail.com',
   userPassword: 'xxxxxx12@',
 };
 const orderPayload = {
@@ -26,13 +26,13 @@ test.beforeAll(async () => {
 
 test.beforeEach(async () => {});
 
-test('Place order', async ({ page }) => {
+test('@API Place order', async ({ page }) => {
   //Bypass login from the app login via api
   page.addInitScript(value => {
     window.localStorage.setItem('token', value);
   }, token);
 
-  const email = 'mdhaseebpes@gmail.com';
+  const email = 'mdxxxxxxx@gmail.com';
   const productName = 'IPHONE 13 PRO';
   const products = page.locator('.card-body');
 

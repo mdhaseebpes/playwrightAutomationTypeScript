@@ -1,14 +1,14 @@
 const { test, expect } = require('@playwright/test');
 
 test('@Web Client App login', async ({ page }) => {
-  const email = 'xxxxxxxx@gmail.com';
+  const email = 'mdxxxxxxx@gmail.com';
   const productName = 'IPHONE 13 PRO';
   const products = page.locator('.card-body');
 
   // Navigate to login
   await page.goto('https://rahulshettyacademy.com/client');
   await page.locator('#userEmail').fill(email);
-  await page.locator('#userPassword').fill('xxxxxxx12@');
+  await page.locator('#userPassword').fill('xxxxxx12@');
   await page.locator("[value='Login']").click();
 
   // Wait for page to load products
