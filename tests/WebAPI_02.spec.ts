@@ -11,12 +11,12 @@ const orderPayload = {
 };
 
 test.beforeAll(async ({ browser }) => {
-  const email = 'mdhaseebpes@gmail.com';
+  const email = 'xxxxxxxx@gmail.com';
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto('https://rahulshettyacademy.com/client');
   await page.locator('#userEmail').fill(email);
-  await page.locator('#userPassword').fill('Cloudone12@');
+  await page.locator('#userPassword').fill('xxxxxx12@');
   await page.locator("[value='Login']").click();
   await page.waitForLoadState('networkidle');
   await context.storageState({ path: 'state.json' });
@@ -26,7 +26,7 @@ test.beforeAll(async ({ browser }) => {
 test.beforeEach(async () => {});
 
 test('@API login via api and order ', async () => {
-  const email = 'mdhaseebpes@gmail.com';
+  const email = 'xxxxxxxx@gmail.com';
   const productName = 'IPHONE 13 PRO';
 
   const page = await webContext.newPage();

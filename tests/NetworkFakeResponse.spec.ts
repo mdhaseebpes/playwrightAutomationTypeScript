@@ -16,8 +16,8 @@ interface FakePayloadOrders {
 }
 
 const loginPayLoad: LoginPayload = {
-  userEmail: 'mdhaseebpes@gmail.com',
-  userPassword: 'Cloudone12@',
+  userEmail: 'xxxxxxxx@gmail.com',
+  userPassword: 'xxxxxx12@',
 };
 
 const orderPayload: OrderPayload = {

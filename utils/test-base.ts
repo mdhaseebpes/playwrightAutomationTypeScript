@@ -10,8 +10,8 @@ export const customtest = baseTest.extend<{
   testDataForOrder: TestDataForOrder;
 }>({
   testDataForOrder: {
-    username: 'mdhaseebpes@gmail.com',
-    password: 'Cloudone12@',
+    username: 'xxxxxxxx@gmail.com',
+    password: 'xxxxxx12@',
     productName: 'IPHONE 13 PRO',
   },
 });

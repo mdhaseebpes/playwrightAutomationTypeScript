@@ -5,8 +5,8 @@ test('Network security test', async ({ page }) => {
 
   // Navigate to login
   await page.goto('https://rahulshettyacademy.com/client');
-  await page.locator('#userEmail').fill('mdhaseebpes@gmail.com');
-  await page.locator('#userPassword').fill('Cloudone12@');
+  await page.locator('#userEmail').fill('xxxxxxxx@gmail.com');
+  await page.locator('#userPassword').fill('xxxxxx12@');
   await page.locator("[value='Login']").click();
 
   // Wait for page to load products

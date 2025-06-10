@@ -1,1 +1,334 @@
-{"uuid":"75d0638a-2b83-487b-940c-744e0a2e3a15","name":"@API login via API and add product to cart","historyId":"064b3caade509fc9eb00125c79ef4fc8:d41d8cd98f00b204e9800998ecf8427e","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1749551273481,"uuid":"6c70be56-84b4-4d83-9e99-2cea20b2aea4","stop":1749551274345}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1749551273479,"uuid":"0502e1de-d60c-49e4-9d89-367b5059e9a2","stop":1749551274346},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1749551274348,"uuid":"450a9b14-bc8d-4572-b134-e4e43d7bf1ae","stop":1749551274386},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1749551274390,"uuid":"eb99ec90-a1c4-4e19-9780-e3bc7e01d2ec","stop":1749551274808},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.goto(https://rahulshettyacademy.com/client)","start":1749551274809,"uuid":"9c5dc753-7148-476a-ba48-fc48f368dfe1","stop":1749551276313},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.fill(mdhaseebpes@gmail.com)","start":1749551276314,"uuid":"6387e6f2-5043-4f9c-b2c5-8684598c4d9e","stop":1749551276338},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.fill(Cloudone12@)","start":1749551276338,"uuid":"31d24aa5-7b1e-4388-8117-df1e30170512","stop":1749551276379},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.click([value='Login'])","start":1749551276380,"uuid":"f0503bd1-0b82-4ee1-8803-c242d2baf392","stop":1749551276404},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.waitForLoadState","start":1749551276405,"uuid":"1b2fe725-0ada-4e5e-be5d-dc0e1e0b296b","stop":1749551277143},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.storageState","start":1749551277144,"uuid":"9e1392c6-fd0b-463b-9623-a0d9e76e69af","stop":1749551277149},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1749551277150,"uuid":"99769c09-56ca-42e8-a18d-5c964634ba6e","stop":1749551277257}],"attachments":[],"parameters":[],"name":"beforeAll hook","start":1749551273476,"uuid":"098e00fe-019f-4a76-92bd-e6a514cc7f25","stop":1749551277337},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1749551277337,"uuid":"a523cc6f-0bed-4f36-aa61-698d82a2f4c3","stop":1749551277339}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1749551273475,"uuid":"1caf4231-73e0-4b42-96da-49d0393e2b7c","stop":1749551277339},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551277340,"name":"browserContext.newPage","uuid":"acd57c8d-0a1c-427b-b5a9-95f86e6ea4df","stop":1749551277391},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551277391,"name":"page.goto(https://rahulshettyacademy.com/client)","uuid":"2bebb320-532e-47c9-bc74-ae68eb09e708","stop":1749551277808},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551277809,"name":"page.waitForLoadState","uuid":"318bd4c9-111f-4422-9bc7-3a0a3d2a05cc","stop":1749551278335},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278336,"name":"locator.waitFor(.card-body >> nth=0)","uuid":"9c1d8c38-146c-43b3-96aa-7b40ed1c513c","stop":1749551278350},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278351,"name":"locator.count(.card-body)","uuid":"c6f47142-49ff-4091-b49d-0649666a5ba1","stop":1749551278355},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278355,"name":"locator.textContent(.card-body >> nth=0 >> b)","uuid":"72fc83f7-04b6-46d4-9497-ec6f169e34c9","stop":1749551278358},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278359,"name":"locator.textContent(.card-body >> nth=1 >> b)","uuid":"4010a6d2-5dc4-448a-bc45-67dfe22c780d","stop":1749551278362},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278363,"name":"locator.textContent(.card-body >> nth=2 >> b)","uuid":"76f77e1d-dd1f-4ac1-b0b9-a3c529428c77","stop":1749551278365},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749551278366,"name":"locator.click(.card-body >> nth=2 >> text=Add To Cart)","uuid":"1916393e-51ed-4948-9daa-d7be2c411a95","stop":1749551278393},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"820f0afd-98e9-4c3a-a25e-88492377facd-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1749551278577,"name":"trace","stop":1749551278577},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"After Hooks","start":1749551278393,"uuid":"bf6c7ba7-2246-4dd8-afee-8ff2d77d6965","stop":1749551278451}],"attachments":[],"parameters":[],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"WebAPI_02.spec.js"},{"name":"titlePath","value":" >  > WebAPI_02.spec.js"},{"name":"tag","value":"API"},{"name":"host","value":"Mohammeds-MacBook-Pro.local"},{"name":"thread","value":"pid-7953-worker-1"},{"name":"suite","value":"WebAPI_02.spec.js"}],"links":[],"start":1749551273478,"testCaseId":"064b3caade509fc9eb00125c79ef4fc8","fullName":"WebAPI_02.spec.js:141:1","stop":1749551274532}
+{
+  "uuid": "75d0638a-2b83-487b-940c-744e0a2e3a15",
+  "name": "@API login via API and add product to cart",
+  "historyId": "064b3caade509fc9eb00125c79ef4fc8:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserType.launch",
+                  "start": 1749551273481,
+                  "uuid": "6c70be56-84b4-4d83-9e99-2cea20b2aea4",
+                  "stop": 1749551274345
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: browser",
+              "start": 1749551273479,
+              "uuid": "0502e1de-d60c-49e4-9d89-367b5059e9a2",
+              "stop": 1749551274346
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1749551274348,
+              "uuid": "450a9b14-bc8d-4572-b134-e4e43d7bf1ae",
+              "stop": 1749551274386
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1749551274390,
+              "uuid": "eb99ec90-a1c4-4e19-9780-e3bc7e01d2ec",
+              "stop": 1749551274808
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.goto(https://rahulshettyacademy.com/client)",
+              "start": 1749551274809,
+              "uuid": "9c5dc753-7148-476a-ba48-fc48f368dfe1",
+              "stop": 1749551276313
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "locator.fill(xxxxxxxx@gmail.com)",
+              "start": 1749551276314,
+              "uuid": "6387e6f2-5043-4f9c-b2c5-8684598c4d9e",
+              "stop": 1749551276338
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "locator.fill(xxxxxx12@)",
+              "start": 1749551276338,
+              "uuid": "31d24aa5-7b1e-4388-8117-df1e30170512",
+              "stop": 1749551276379
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "locator.click([value='Login'])",
+              "start": 1749551276380,
+              "uuid": "f0503bd1-0b82-4ee1-8803-c242d2baf392",
+              "stop": 1749551276404
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.waitForLoadState",
+              "start": 1749551276405,
+              "uuid": "1b2fe725-0ada-4e5e-be5d-dc0e1e0b296b",
+              "stop": 1749551277143
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.storageState",
+              "start": 1749551277144,
+              "uuid": "9e1392c6-fd0b-463b-9623-a0d9e76e69af",
+              "stop": 1749551277149
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1749551277150,
+              "uuid": "99769c09-56ca-42e8-a18d-5c964634ba6e",
+              "stop": 1749551277257
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeAll hook",
+          "start": 1749551273476,
+          "uuid": "098e00fe-019f-4a76-92bd-e6a514cc7f25",
+          "stop": 1749551277337
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1749551277337,
+          "uuid": "a523cc6f-0bed-4f36-aa61-698d82a2f4c3",
+          "stop": 1749551277339
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1749551273475,
+      "uuid": "1caf4231-73e0-4b42-96da-49d0393e2b7c",
+      "stop": 1749551277339
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551277340,
+      "name": "browserContext.newPage",
+      "uuid": "acd57c8d-0a1c-427b-b5a9-95f86e6ea4df",
+      "stop": 1749551277391
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551277391,
+      "name": "page.goto(https://rahulshettyacademy.com/client)",
+      "uuid": "2bebb320-532e-47c9-bc74-ae68eb09e708",
+      "stop": 1749551277808
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551277809,
+      "name": "page.waitForLoadState",
+      "uuid": "318bd4c9-111f-4422-9bc7-3a0a3d2a05cc",
+      "stop": 1749551278335
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278336,
+      "name": "locator.waitFor(.card-body >> nth=0)",
+      "uuid": "9c1d8c38-146c-43b3-96aa-7b40ed1c513c",
+      "stop": 1749551278350
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278351,
+      "name": "locator.count(.card-body)",
+      "uuid": "c6f47142-49ff-4091-b49d-0649666a5ba1",
+      "stop": 1749551278355
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278355,
+      "name": "locator.textContent(.card-body >> nth=0 >> b)",
+      "uuid": "72fc83f7-04b6-46d4-9497-ec6f169e34c9",
+      "stop": 1749551278358
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278359,
+      "name": "locator.textContent(.card-body >> nth=1 >> b)",
+      "uuid": "4010a6d2-5dc4-448a-bc45-67dfe22c780d",
+      "stop": 1749551278362
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278363,
+      "name": "locator.textContent(.card-body >> nth=2 >> b)",
+      "uuid": "76f77e1d-dd1f-4ac1-b0b9-a3c529428c77",
+      "stop": 1749551278365
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749551278366,
+      "name": "locator.click(.card-body >> nth=2 >> text=Add To Cart)",
+      "uuid": "1916393e-51ed-4948-9daa-d7be2c411a95",
+      "stop": 1749551278393
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "820f0afd-98e9-4c3a-a25e-88492377facd-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1749551278577,
+      "name": "trace",
+      "stop": 1749551278577
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1749551278393,
+      "uuid": "bf6c7ba7-2246-4dd8-afee-8ff2d77d6965",
+      "stop": 1749551278451
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "WebAPI_02.spec.js" },
+    { "name": "titlePath", "value": " >  > WebAPI_02.spec.js" },
+    { "name": "tag", "value": "API" },
+    { "name": "host", "value": "Mohammeds-MacBook-Pro.local" },
+    { "name": "thread", "value": "pid-7953-worker-1" },
+    { "name": "suite", "value": "WebAPI_02.spec.js" }
+  ],
+  "links": [],
+  "start": 1749551273478,
+  "testCaseId": "064b3caade509fc9eb00125c79ef4fc8",
+  "fullName": "WebAPI_02.spec.js:141:1",
+  "stop": 1749551274532
+}

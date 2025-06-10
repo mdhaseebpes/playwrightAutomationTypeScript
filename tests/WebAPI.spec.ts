@@ -9,8 +9,8 @@ interface LoginPayload {
 }
 
 const loginPayLoad: LoginPayload = {
-  userEmail: 'mdhaseebpes@gmail.com',
-  userPassword: 'Cloudone12@',
+  userEmail: 'xxxxxxxx@gmail.com',
+  userPassword: 'xxxxxx12@',
 };
 
 interface OrderPayload {
@@ -45,7 +45,7 @@ test('@API Place order', async ({ page }) => {
     window.localStorage.setItem('token', value);
   }, token);
 
-  const email = 'mdhaseebpes@gmail.com';
+  const email = 'xxxxxxxx@gmail.com';
   const productName = 'IPHONE 13 PRO';
   const products = page.locator('.card-body');
 
