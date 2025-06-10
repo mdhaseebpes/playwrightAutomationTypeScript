@@ -65,3 +65,7 @@ npx playwright test tests/uploadDownload.spec.ts
 
 Generate an HTML report:
 npx playwright show-report
+
+👤 Author
+Mohammed Haseeb Ali Khan
+https://www.linkedin.com/in/mohammed-haseeb-ali-khan-25397643/
