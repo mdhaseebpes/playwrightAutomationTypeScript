@@ -7,9 +7,7 @@ test('Browser navigation ', async ({ page }) => {
   await page.goForward();
 });
 
-test.only('Browser Pop up mouser hover and frame validation', async ({
-  page,
-}) => {
+test('Browser Pop up mouser hover and frame validation', async ({ page }) => {
   page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
   //Hidden text box

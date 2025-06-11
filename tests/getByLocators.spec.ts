@@ -20,13 +20,13 @@ test('Playwright special locators', async ({ page }) => {
     .click();
 });
 
-test.only('Client App login', async ({ page }) => {
-  const email = 'xxxxxxxx@gmail.com';
+test('Client App login', async ({ page }) => {
+  const email = 'mdhaseebpes@gmail.com';
   const products = page.locator('.card-body');
 
   await page.goto('https://rahulshettyacademy.com/client');
   await page.getByPlaceholder('email@example.com').fill(email);
-  await page.getByPlaceholder('enter your passsword').fill('xxxxxx12@');
+  await page.getByPlaceholder('enter your passsword').fill('Cloudone12@');
   await page.getByRole('button', { name: 'Login' }).click();
   await page.waitForLoadState('networkidle');
   await page.locator('.card-body b').first().waitFor();
